@@ -2,7 +2,7 @@ import streamlit as st
 import cv2
 import numpy as np
 
-# Error handling
+# Error handling for imports and initialization
 try:
     # Load Haar cascades for face and eye detection
     face_classifier = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
@@ -77,3 +77,4 @@ try:
 
 except Exception as e:
     st.error(f"An error occurred: {str(e)}")
+
